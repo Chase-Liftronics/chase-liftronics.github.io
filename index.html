@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="http://liftronics.com.valet/storage/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://liftronics.com.valet/storage/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://liftronics.com.valet/storage/favicons/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <title>
+    
+</title>
+
+
+
+<meta property="og:type" content="website" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta property="og:site_name" content="Liftronics" />
+
+
+<meta property="og:locale" content="en_US" />
+
+
+
+    <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/tailwind.css" /><script type="module" src="http://127.0.0.1:5173/resources/js/site.js"></script>
+    <script src="https://kit.fontawesome.com/bbdb569ece.js" crossorigin="anonymous"></script>
+</head>
+
+<body
+    class="flex flex-col justify-between min-h-screen font-sans antialiased dark:bg-slate-950 debug-screens">
+    <nav aria-labelledby="nav-heading" :aria-expanded="isOpen"
+    class="container flex flex-wrap items-center justify-between py-5" x-data="{ isOpen: false }"
+    @keydown.escape="isOpen = false" @click.away="isOpen = false">
+    <!--Logo etc-->
+    <a aria-label="logo" href=" /">
+        
+    <picture>
+        
+            
+                <img class="mb-6 h-12" src="http://liftronics.com.valet/storage/liftronics-logo-no-text.svg" alt="Liftronics Logo" />
+            
+        
+    </picture>
+
+    </a>
+
+    <!--Toggle button (hidden on large screens)-->
+    <button :aria-expanded="isOpen" aria-controls="nav-list" aria-label="toggle menu" @click="isOpen = !isOpen"
+        type="button" class="block px-2 text-indigo-900 lg:hidden focus:outline-none">
+        <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path x-show.transition="!isOpen"
+                d="M3 7h18a1 1 0 100-2H3a1 1 0 000 2zm18 10H3a1 1 0 000 2h18a1 1 0 000-2zm0-4H3a1 1 0 000 2h18a1 1 0 000-2zm0-4H3a1 1 0 000 2h18a1 1 0 000-2z" />
+
+            <path x-show="isOpen"
+                d="M13.41 12l6.3-6.29a1.004 1.004 0 00-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 10-1.42 1.42l6.3 6.29-6.3 6.29a.999.999 0 000 1.42 1 1 0 001.42 0l6.29-6.3 6.29 6.3a1.001 1.001 0 001.639-.325 1 1 0 00-.22-1.095L13.41 12z" />
+        </svg>
+    </button>
+
+    <!--Menu-->
+    <div class="w-full grow lg:flex lg:items-center lg:w-auto" :class="{ 'block': isOpen, 'hidden': !isOpen }">
+        <ul id="nav-list"
+            class="flex-wrap items-center justify-end flex-1 pt-6 space-y-5 lg:space-y-0 lg:pt-0 list-reset lg:flex lg:space-x-10">
+            
+                
+                    <li>
+                        <a class="text-xl lg:text-lg text-indigo-900 hover:text-purple-500 text-indigo-900 font-bold "
+                            href="/" @click="isOpen = false">
+                            Home
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </div>
+</nav>
+
+    
+    <div class="container flex flex-col justify-between py-16 md:py-24 md:flex-row">
+    <div class="md:text-left pt-60 md:pr-10 xl:pr-20 lg:w-5/12 md:w-6/12">
+        
+            <p class="font-bold xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-sky-600  ">
+Liftronics
+
+
+</p>
+
+        
+
+        
+            <p
+    class=" font-normal text-xl text-blue-100  mt-4">
+    Specializing in building and maintaining control systems and operational technology for mountain resorts, theme parks, and water parks.
+</p>
+
+        
+
+        
+    </div>
+    <div class="mt-16 lg:w-7/12 md:w-6/12 md:mt-0">
+        
+    <picture>
+        
+            
+                <source
+                    srcset="
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/6e1856b31db81eb8b52fcfa564231a2b.webp 320w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/88a7c0cd1417b343d59c0b0aae8bf8d6.webp 480w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/7ab7ab392e32c67e1ad16b83ff2dc95f.webp 768w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/1bf9397cff6fdf8658f89d8943e53b1c.webp 1280w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/c50b86c4ef6fe838074043f899f27b4c.webp 1440w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/a1963175e86f39c851be24e3fd05fbbf.webp 1680w"
+                    sizes="(min-width: 768px) 35vw, 80vw"
+                    type="image/webp"
+                >
+                <source
+                    srcset="
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/0b8128d1b0565489f058a46cecf73240.jpg 320w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/3129d1d7f3dff35bd8d07fb0782e2f24.jpg 480w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/c98cf598b150104988c28eaaa39d742a.jpg 768w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/5a53098fbc2d0df92a5c24bfbf3cbff9.jpg 1280w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/c77e6cf03e5b4345e195341f09b59d99.jpg 1440w,
+                        /img/http/storage/twolf-loading-console-1686121056.jpg/6d867742f832e36f3e1720f432518552.jpg 1680w"
+                    sizes="(min-width: 768px) 35vw, 80vw"
+                    type="image/jpeg"
+                >
+                <img
+                    
+                        class="object-cover w-full h-full rounded-xl"
+                        style="object-position: 50% 50%"
+                    
+                    src="/img/http/storage/twolf-loading-console-1686121056.jpg/5a53098fbc2d0df92a5c24bfbf3cbff9.jpg"
+                    alt=""
+                    
+                >
+            
+        
+    </picture>
+
+    </div>
+</div>
+
+
+    <div class="relative overflow-hidden">
+    <div class="container py-24">
+        <div class="flex flex-col">
+            
+                <p class="font-bold md:text-3xl lg:text-4xl text-2xl text-sky-600  text-center">
+Our Offerings
+
+
+    <div class="w-14 h-[2px] bg-indigo-900 mt-2 rounded mx-auto"></div>
+
+</p>
+
+            
+
+            
+                <p
+    class=" font-normal text-xl text-blue-100  mt-4 mb-10 text-center">
+    These are just some of the things we excel at. But we're happy to talk about any electrical, automation, or technology project you might have.
+</p>
+
+            
+
+            <div class="grid gap-5 md:grid-cols-3 lg:gap-10">
+                
+                    <div class="p-5 bg-slate-800 lg:p-10 rounded-2xl shadow-xl">
+                        
+                        
+                            <i class="fa-light fa-toggle-on fa-2xl w-20 h-10 text-sky-200"></i>
+                        
+
+                        
+                            <p class="font-bold md:text-2xl text-lg text-sky-600  ">
+Control Systems
+
+
+</p>
+
+                        
+
+                        
+                            <div class="max-w-xs mt-4">
+                                <p
+    class=" font-normal text-base text-blue-100  ">
+    Upgrading or updating existing control systems, for better reliability, ease of troubleshooting, new features, or to meet current standards.
+</p>
+
+                            </div>
+                        
+                    </div>
+                
+                    <div class="p-5 bg-slate-800 lg:p-10 rounded-2xl shadow-xl">
+                        
+                        
+                            <i class="fa-light fa-flux-capacitor fa-2xl w-20 h-10 text-sky-200"></i>
+                        
+
+                        
+                            <p class="font-bold md:text-2xl text-lg text-sky-600  ">
+Drives
+
+
+</p>
+
+                        
+
+                        
+                            <div class="max-w-xs mt-4">
+                                <p
+    class=" font-normal text-base text-blue-100  ">
+    AC and DC drive package design and commissioning, in new or existing installations.
+</p>
+
+                            </div>
+                        
+                    </div>
+                
+                    <div class="p-5 bg-slate-800 lg:p-10 rounded-2xl shadow-xl">
+                        
+                        
+                            <i class="fa-light fa-screwdriver-wrench fa-2xl w-20 h-10 text-sky-200"></i>
+                        
+
+                        
+                            <p class="font-bold md:text-2xl text-lg text-sky-600  ">
+Service Work
+
+
+</p>
+
+                        
+
+                        
+                            <div class="max-w-xs mt-4">
+                                <p
+    class=" font-normal text-base text-blue-100  ">
+    Troubleshooting and diagnosing issues, in-person or remotely, to help get machines back up and running.
+</p>
+
+                            </div>
+                        
+                    </div>
+                
+                    <div class="p-5 bg-slate-800 lg:p-10 rounded-2xl shadow-xl">
+                        
+                        
+                            <i class="fa-light fa-computer fa-2xl w-20 h-10 text-sky-200"></i>
+                        
+
+                        
+                            <p class="font-bold md:text-2xl text-lg text-sky-600  ">
+Custom Development
+
+
+</p>
+
+                        
+
+                        
+                            <div class="max-w-xs mt-4">
+                                <p
+    class=" font-normal text-base text-blue-100  ">
+    Custom software and/or hardware to meet any attraction or resort's needs.
+</p>
+
+                            </div>
+                        
+                    </div>
+                
+            </div>
+        </div>
+
+        <div style="z-index:-1"
+            class="absolute top-56 xl:bottom-0 -left-28 xl:w-[900px] md:w-[650px] md:h-[680px] xl:h-[900px] w-[500px] h-[500px]">
+            <svg class="text-purple-300 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1119 968"><path fill-opacity=".15" d="M111.047 356.268c61.376-70.487 182.582 20.702 358.203-19.207 152.109-34.582 160.86-126.439 282.392-121.884 88.789 3.31 185.541 54.578 238.714 143.895C1049 457.551 1027.68 557.81 1021.7 582.139c-26.717 109.124-106.002 166.688-133.972 186.348-115.24 80.953-244.555 66.767-306.592 59.992C348.1 802.957 98.614 636.583 87.506 455.701c-1.477-23.68-4.164-67.603 23.541-99.433z"/></svg>
+        </div>
+
+    </div>
+</div>
+
+    <div class="w-full h-full bg-slate-800">
+    <div class="container pt-24">
+        <div class="flex flex-col space-y-16 md:flex-row md:space-y-0">
+            <div class="md:w-4/12 md:mr-20 lg:mr-0">
+                
+                    <a aria-label="logo" href="/">
+                        
+    <picture>
+        
+            
+                <img class="mb-6 max-h-12" src="http://liftronics.com.valet/storage/liftronics-logo-no-text.svg" alt="Liftronics Logo" />
+            
+        
+    </picture>
+
+                    </a>
+                
+
+                <p
+    class=" font-normal text-xl text-white  ">
+    Liftronics builds custom safety, control, and supervisory systems for the outdoor recreation and amusement industries.
+</p>
+
+            </div>
+            
+                <div class="md:w-3/12 lg:ml-20">
+                    <p class="mb-10 text-xl font-bold text-white">
+                        Home
+                    </p>
+
+                    
+                </div>
+            
+        </div>
+    </div>
+    <div class="pt-5 pb-16 mt-16 border-t border-gray-700">
+        <div class="container">
+            <p
+    class=" font-normal text-base text-blue-100  ">
+    © Liftronics 2023. All rights reserved.
+</p>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

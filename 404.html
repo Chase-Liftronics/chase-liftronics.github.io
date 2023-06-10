@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="http://liftronics.com.valet/storage/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://liftronics.com.valet/storage/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://liftronics.com.valet/storage/favicons/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <title>
+    
+</title>
+
+
+
+<meta property="og:type" content="website" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta property="og:site_name" content="Liftronics" />
+
+
+<meta property="og:locale" content="en_US" />
+
+
+
+    <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/tailwind.css" /><script type="module" src="http://127.0.0.1:5173/resources/js/site.js"></script>
+    <script src="https://kit.fontawesome.com/bbdb569ece.js" crossorigin="anonymous"></script>
+</head>
+
+<body
+    class="flex flex-col justify-between min-h-screen font-sans antialiased dark:bg-slate-950 debug-screens">
+    <nav aria-labelledby="nav-heading" :aria-expanded="isOpen"
+    class="container flex flex-wrap items-center justify-between py-5" x-data="{ isOpen: false }"
+    @keydown.escape="isOpen = false" @click.away="isOpen = false">
+    <!--Logo etc-->
+    <a aria-label="logo" href=" /">
+        
+    <picture>
+        
+            
+                <img class="mb-6 h-12" src="http://liftronics.com.valet/storage/liftronics-logo-no-text.svg" alt="Liftronics Logo" />
+            
+        
+    </picture>
+
+    </a>
+
+    <!--Toggle button (hidden on large screens)-->
+    <button :aria-expanded="isOpen" aria-controls="nav-list" aria-label="toggle menu" @click="isOpen = !isOpen"
+        type="button" class="block px-2 text-indigo-900 lg:hidden focus:outline-none">
+        <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path x-show.transition="!isOpen"
+                d="M3 7h18a1 1 0 100-2H3a1 1 0 000 2zm18 10H3a1 1 0 000 2h18a1 1 0 000-2zm0-4H3a1 1 0 000 2h18a1 1 0 000-2zm0-4H3a1 1 0 000 2h18a1 1 0 000-2z" />
+
+            <path x-show="isOpen"
+                d="M13.41 12l6.3-6.29a1.004 1.004 0 00-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 10-1.42 1.42l6.3 6.29-6.3 6.29a.999.999 0 000 1.42 1 1 0 001.42 0l6.29-6.3 6.29 6.3a1.001 1.001 0 001.639-.325 1 1 0 00-.22-1.095L13.41 12z" />
+        </svg>
+    </button>
+
+    <!--Menu-->
+    <div class="w-full grow lg:flex lg:items-center lg:w-auto" :class="{ 'block': isOpen, 'hidden': !isOpen }">
+        <ul id="nav-list"
+            class="flex-wrap items-center justify-end flex-1 pt-6 space-y-5 lg:space-y-0 lg:pt-0 list-reset lg:flex lg:space-x-10">
+            
+                
+                    <li>
+                        <a class="text-xl lg:text-lg text-indigo-900 hover:text-purple-500 "
+                            href="/" @click="isOpen = false">
+                            Home
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </div>
+</nav>
+
+    <div class="relative flex items-center py-32 overflow-hidden md:py-0 md:h-screen">
+    <div class="hidden lg:block absolute lg:w-[1115px] lg:h-[1115px] rounded-full -right-80 md:-right-[450px] bg-opacity-30"
+        style="background: linear-gradient(#9F79C8, #A580CB,#B492D3,#CDB0E1,#D1B4E3,#DBC4E9,#EBDEF3); opacity: 0.5;">
+    </div>
+    <div class="container">
+        <div class="flex flex-wrap md:-mx-5">
+            <div class="w-full md:px-5 md:w-1/2">
+                <p class="font-bold md:text-5xl text-3xl text-sky-600  ">
+Page not found
+
+
+</p>
+
+
+                
+                    <div class="mt-4 prose prose-p:text-bluegray">
+                        <p>You may have mistyped the address or the page may have moved.</p>
+                    </div>
+                
+
+
+                <div class="mt-4">
+                    
+    <a href="/"
+        
+        class=" inline-flex items-center font-bold rounded-full focus:outline-none focus-visible:ring focus:ring-purple-500 focus:ring-opacity-20 focus-visible:ring-offset-2 transition-all ease-in-out duration-300 group px-6 py-4 text-base bg-purple-500 text-white border-2 border-purple-500 hover:bg-white hover:text-purple-500  ">
+
+        
+
+        Go Back
+
+        
+    </a>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="relative z-50 order-first w-full mb-12 md:order-none md:px-5 md:w-1/2 md:mb-0">
+                <svg class="text-purple-500 fill-current" fill="none" viewBox="0 0 603 253"> <path d="M109.213 249.51V201.353H0V169.946L116.147 3.48965H152.205V167.154H187.222V201.353H152.205V249.51H109.213ZM109.213 167.154V56.5324H117.534L33.2839 177.623V167.154H109.213Z" /> <path d="M297.686 253C269.025 253 246.951 242.066 231.465 220.197C215.979 198.096 208.236 166.689 208.236 125.977C208.236 84.7986 215.979 53.508 231.465 32.1048C246.951 10.7016 269.025 0 297.686 0C326.579 0 348.652 10.7016 363.907 32.1048C379.394 53.508 387.137 84.6823 387.137 125.628C387.137 166.573 379.394 198.096 363.907 220.197C348.652 242.066 326.579 253 297.686 253ZM297.686 216.01C313.404 216.01 325.076 208.798 332.704 194.374C340.331 179.717 344.145 156.802 344.145 125.628C344.145 104.69 342.411 87.7067 338.944 74.6786C335.708 61.6506 330.623 52.1122 323.689 46.0635C316.755 39.7821 308.087 36.6414 297.686 36.6414C282.2 36.6414 270.527 43.737 262.669 57.9283C255.041 71.8869 251.227 94.4533 251.227 125.628C251.227 146.333 252.961 163.432 256.428 176.926C259.895 190.186 264.98 200.074 271.683 206.588C278.617 212.869 287.285 216.01 297.686 216.01Z" /> <path d="M524.991 249.51V201.353H415.778V169.946L531.925 3.48965H567.983V167.154H603V201.353H567.983V249.51H524.991ZM524.991 167.154V56.5324H533.312L449.062 177.623V167.154H524.991Z" /> </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="w-full h-full bg-slate-800">
+    <div class="container pt-24">
+        <div class="flex flex-col space-y-16 md:flex-row md:space-y-0">
+            <div class="md:w-4/12 md:mr-20 lg:mr-0">
+                
+                    <a aria-label="logo" href="/">
+                        
+    <picture>
+        
+            
+                <img class="mb-6 max-h-12" src="http://liftronics.com.valet/storage/liftronics-logo-no-text.svg" alt="Liftronics Logo" />
+            
+        
+    </picture>
+
+                    </a>
+                
+
+                <p
+    class=" font-normal text-xl text-white  ">
+    Liftronics builds custom safety, control, and supervisory systems for the outdoor recreation and amusement industries.
+</p>
+
+            </div>
+            
+                <div class="md:w-3/12 lg:ml-20">
+                    <p class="mb-10 text-xl font-bold text-white">
+                        
+                    </p>
+
+                    
+                </div>
+            
+        </div>
+    </div>
+    <div class="pt-5 pb-16 mt-16 border-t border-gray-700">
+        <div class="container">
+            <p
+    class=" font-normal text-base text-blue-100  ">
+    © Liftronics 2023. All rights reserved.
+</p>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
